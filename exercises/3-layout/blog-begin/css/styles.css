@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kavivanar', cursive;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    color: #A51F10;
+    margin: 0;
+}
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+}
+
+section{
+    border-bottom: 1px solid #DA0090;
+        margin-bottom: 0.3rem;
+}
+
+
+
+
+
+/* Navbar */
+
+nav{
+    text-align: center;
+    /* border: 2px solid red; */
+    border-top: 2px solid #DA0090;
+    border-bottom: 2px solid #a1096f;
+    margin: 2rem;
+}
+
+nav ul{
+    margin: 0 ;
+    padding: 0 ;
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0.7rem;
+}
+
+nav a{
+    color: #240101;
+}
+
+nav a:hover{
+    background-color: #240101;
+    color: #89A611;
+}
+
+.wrapper{
+    /* border: 5px solid red; */
+    width: 80%;
+    margin: 0 auto;    
+}
+
+
+
+/* Footer */
+
+.footer ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #A51F10;
+}
+
+
+
+
+/* Header */
+header{
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.leftheader{
+    /* border: 5px dotted green; */
+    flex-basis: 40%;
+    text-align: right;
+    padding-right: 0.3rem;
+}
+
+.rightheader{
+    /* border: 5px dotted blue; */
+    flex-basis: 60%;
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+}
+
+.rightheader h1{
+    color: #DA0090;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.rightheader p{
+    margin: -0.5rem;
+}
+
+
+
+/* Articles */
+article {
+    /* border: 2px solid blue; */
+    margin: 2rem 0;
+    /* overflow: auto; */
+}
+article:after{
+    content: "";
+    display:table;
+    clear: both;
+}
+
+article img{
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: 1rem;
+}

@@ -1,0 +1,190 @@
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 210, 194);
+    color: rgb(1, 17, 31);
+}
+
+img{
+    border: 10px solid #995432;
+}
+
+h1{
+    border: 3px double #868923;
+    background-color: white;
+}
+
+blockquote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic ;
+    text-align: center;
+    background-image: url(./bird.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+cite{
+    font-size: 1.6rem;
+}
+
+.bigbold{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: #2a0150;
+}
+
+a:link{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style:italic;
+    text-decoration: none;
+    color:darkblue;
+}
+
+a:visited{
+    font-size: 2rem;
+
+    /* font-family: Verdana, Geneva, Tahoma; */
+    /* background-color: yellowgreen; */
+    /* this is not working */
+    /* ok this both are not working because of the upper css we provided, that has must more priority then this */
+    
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgreen;
+}
+
+/* descandant selector */
+ul a:hover{
+    color: black;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a.harvard{
+    font-style: italic;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+/* p{
+    color:red
+} */
+
+#myid{
+    color:blueviolet;
+    font-weight: bold;
+}
+
+
+/* 
+    adobe.com
+    provide us color code -> go and choose your and paste in your css file. 
+
+*/
+
+img{
+    border-radius: 50px;
+    height: 30rem;
+    width: 20rem;
+}
+/* this is working for html part not for the bird image what we added using css */
+
+
+div{
+    border: 10px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+/* 
+    top, bottom, right, left any of them we can use  in padding and margin
+*/
+p{
+    border: 2px solid green;
+}
+/* paragraph has it's own properties like margin and padding */
+
+/* p{
+    margin: 0px;
+} */
+/* this will remove gaps outside of p tags */
+
+
+.box1{
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+/* this box1 has max top margin limit of it's parent tag */
+
+
+.box2{
+    border: 2px solid black;
+    margin-right: 50px;
+}
+
+.box3{
+    border: 2px solid black;
+    margin-left: 50px;
+}
+/* these right or left will work but there is limits on top & bottom */
+
+
+/* .navigation {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+nav{
+    border: 2px solid red;
+}
+nav ul {
+    list-style-type: none;
+    border: 2px solid indianred;
+    margin: 2rem;
+}
+nav ul li{
+    border: 2px solid green;
+    margin:2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+nav a:hover{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.floatleft{
+    float: left;
+    border: 10px double blue;
+    padding: 20px;
+    margin: 2rem;
+}
+
+article{
+    width: 25rem;
+    border: 3px solid red;
+    text-align: center;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-start;
+  /* justify-content: flex-end; */
+  /* justify-content: space-arounds; */
+  justify-content: space-around;
+}
+
+li{
+    border: 3px solid black;
+    flex-basis: 10%;
+}
